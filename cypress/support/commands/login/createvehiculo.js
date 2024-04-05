@@ -2,7 +2,7 @@ Cypress.Commands.add('registerVehicle', (accessToken) => {
   const randomNumber = Math.floor(Math.random() * 1000);
   const plateNumber = 'JER' + randomNumber;
   cy.log(plateNumber)
-  return cy.fixture('login/vehicleFlypass.json').then((fixture) => {      
+  return cy.fixture('Flypass/vehicleFlypass.json').then((fixture) => {      
     const variables = {
       plate: plateNumber
     }

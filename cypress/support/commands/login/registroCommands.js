@@ -33,7 +33,8 @@ Cypress.Commands.add('consultUser', (Document) => {
     return cy.task('queryDatabase', { query: transaccionSQLConsul }).then((transactionResult) => {
         if (transactionResult && transactionResult.length > 0 && transactionResult[0].CDPERSONA) {
             const cdPersona = transactionResult[0].CDPERSONA;
-            cy.updateUser(cdPersona).then(() => {
+            return cy.updateUser(cdPersona).then((resultUpdate) => {
+                cy.log(resultUpdate)
             });
         } else {
              cy.log('No se encontró CDPERSONA en la consulta.');

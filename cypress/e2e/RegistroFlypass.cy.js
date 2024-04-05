@@ -1,7 +1,7 @@
 describe('Registration Form Test', () => {
    it('Successfully fill out the registration form', () => {
         cy.visit('https://cert-clientes.flypass.com.co/#!/register/person');
-        cy.fixture('/login/cuentaFlypass.json').then((infoUsuario) => {
+        cy.fixture('/Flypass/cuentaFlypass.json').then((infoUsuario) => {
             cy.RegisterFlypass(infoUsuario);           
         });
     });

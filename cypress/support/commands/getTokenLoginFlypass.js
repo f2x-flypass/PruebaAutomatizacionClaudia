@@ -1,5 +1,5 @@
 Cypress.Commands.add('getToken', () => {
-    return cy.fixture('login/tokenFlypass.json').then((requestBody) => {
+    return cy.fixture('Flypass/tokenFlypass.json').then((requestBody) => {
       return cy
         .request({
           method: 'POST',
