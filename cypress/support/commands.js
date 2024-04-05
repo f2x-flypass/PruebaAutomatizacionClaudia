@@ -26,3 +26,7 @@
 
 import './commands/interacciones'
 import './commands/login/loginCommands'
+import './commands/login/registroCommands'
+import './commands/getTokenLoginFlypass.js'
+import './commands/login/createvehiculo.js'
+

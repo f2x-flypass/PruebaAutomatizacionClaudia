@@ -7,7 +7,7 @@
         "cy:open": "cypress open"
     },
     "devDependencies": {
-        "cypress": "latest",
+        "cypress": "^13.7.2",
         "cypress-mochawesome-reporter": "latest",
         "cypress-xpath": "latest",
         "dotenv": "latest",

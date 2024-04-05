@@ -1,0 +1,45 @@
+{
+    "licensePlate": "JER022",
+    "carConfiguration": {
+        "id": 1,
+        "configuration": "AUTOMÓVILES, CAMPEROS Y VANS",
+        "description": "AUTOMOVILES, CAMIONETAS, VANS. LLANTA SENCILLA TRASERA",
+        "defaultValue": 8000,
+        "vehicleType": "1",
+        "axleType": "1",
+        "axlesQuantity": "2",
+        "replenishmentValue": 50000,
+        "replenishmentMinValue": 0
+    },
+    "brand": {
+        "id": 91,
+        "brandDescription": "EFASDFAS",
+        "runtBrand": null
+    },
+    "brandSeries": {
+        "id": 768,
+        "brand": {
+            "id": 91,
+            "brandDescription": "EFASDFAS",
+            "runtBrand": null
+        },
+        "serieDescription": "OTRA",
+        "runtBrandSeries": null
+    },
+    "color": {
+        "id": 1,
+        "color": "AMARILLO",
+        "runtColor": {
+            "id": 4,
+            "runtCode": "4",
+            "name": "AMARILLO"
+        },
+        "colorView": {
+            "color": "AMARILLO",
+            "id": 1
+        }
+    },
+    "model": 2022,
+    "titular": "Sebastiántest",
+    "email": "sebastian.orozco@f2x.com.co"
+}
