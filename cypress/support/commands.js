@@ -25,8 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import "./utils/replace_variables"
 import './commands/interacciones'
-import './commands/login/loginCommands'
-import './commands/login/registroCommands'
+import './commands/Flypass/loginCommands.js'
+import './commands/Flypass/registroCommands.js'
 import './commands/getTokenLoginFlypass.js'
-import './commands/login/createvehiculo.js'
+import './commands/Flypass/createvehiculo.js'
 
