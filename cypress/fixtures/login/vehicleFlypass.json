@@ -1,5 +1,5 @@
 {
-    "licensePlate": "JER022",
+    "licensePlate": "{{plate}}",
     "carConfiguration": {
         "id": 1,
         "configuration": "AUTOMÓVILES, CAMPEROS Y VANS",

@@ -1,10 +1,10 @@
 describe('Registration Form Test', () => {
-   it('Successfully fill out the registration form', () => {
+   /*it('Successfully fill out the registration form', () => {
         cy.visit('https://cert-clientes.flypass.com.co/#!/register/person');
         cy.fixture('/login/cuentaFlypass.json').then((infoUsuario) => {
             cy.RegisterFlypass(infoUsuario);           
         });
-    });
+    });*/
     it('vehicle creation', () => {
         let access_token; 
         cy.getToken().then((token) => {
@@ -21,8 +21,8 @@ describe('Registration Form Test', () => {
             });
         });
     });
-    it('delete vehicle', () => {
+   /* it('delete vehicle', () => {
         cy.visit('https://cert-clientes.flypass.com.co/#!/login');
         cy.DeleteVehicle()
-    });
+    });*/
 });

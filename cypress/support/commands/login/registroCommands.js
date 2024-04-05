@@ -25,11 +25,11 @@ Cypress.Commands.add('RegisterFlypass',(dataRegister) => {
     });
 });
 
-Cypress.Commands.add('consultUser', (NumeroDocumento) => {
+Cypress.Commands.add('consultUser', (Document) => {
     const transaccionSQLConsul = `SELECT P.CDPERSONA FROM TFPS_PERSONAS P
     INNER JOIN TFPS_USUARIOS_SEG US ON US.CDPERSONA=P.CDPERSONA
     INNER JOIN TFPS_USUARIOS U ON US.CDUSUARIO_SEG= U.CDUSUARIO_SEG
-    WHERE P.CDNRO_DOC='${NumeroDocumento}'`;
+    WHERE P.CDNRO_DOC='${Document}'`;
     return cy.task('queryDatabase', { query: transaccionSQLConsul }).then((transactionResult) => {
         if (transactionResult && transactionResult.length > 0 && transactionResult[0].CDPERSONA) {
             const cdPersona = transactionResult[0].CDPERSONA;
@@ -40,11 +40,11 @@ Cypress.Commands.add('consultUser', (NumeroDocumento) => {
         }
     });
 });
-Cypress.Commands.add('updateUser', (cdpersona) => {
+Cypress.Commands.add('updateUser', (idPerson) => {
     const transaccionSQLUpdate = `UPDATE TFPS_USUARIOS_SEG 
         SET SNINHABILITADO = 'N', 
             SNVALIDO_CORREO = 'Y' 
-        WHERE CDPERSONA ='${cdpersona}'`;
+        WHERE CDPERSONA ='${idPerson}'`;
     return cy.task('queryDatabase', { query: transaccionSQLUpdate }).then((transactionResult) => {
         return cy.task('queryDatabase', { query: 'COMMIT' });
     });
