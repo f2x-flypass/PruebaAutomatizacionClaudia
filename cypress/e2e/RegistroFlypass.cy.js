@@ -14,8 +14,7 @@ describe('Registration Form Test', () => {
                     expect(result.status).to.be.eq(200);
                 } else {
                 cy.log(`Error ${response.status}: ${response.body.message}`);
-                // Asegúrate de que el status sea 500 para indicar que es un error del servidor
-                expect(response.status).to.equal(500);
+                 expect(response.status).to.equal(500);
                 }
 
             });
